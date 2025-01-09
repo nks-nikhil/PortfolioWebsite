@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Dynamic Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="#hero" class="logo">MyPortfolio</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span id="name">Nikhil Sharma</span></h1>
+      <p class="tagline">A passionate Web and App Developer & Designer</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right">
+          <img src="rdkjwl.jpg" alt="Your Image" class="profile-img">
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <h2>About Me</h2>
+          <p>Hello, I'm <strong>Nikhil Sharma</strong>, a passionate web and app developer and designer. I specialize in frontend technologies like HTML, CSS, and JavaScript, and I am always eager to explore new technologies and build innovative solutions. My goal is to create seamless and engaging web experiences.</p>
+          <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML & CSS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Kotlin</li>
+              <li>C & C++</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/nikhil-sharma-a16685235/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/nks-nikhil" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/NikhilS20335861?t=IpG2r6k_eGKm53v9Au_LMQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <h2 data-aos="fade-up">Projects</h2>
+      <div id="projects-grid" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <h2 data-aos="fade-up">Skills</h2>
+      <div id="skills-grid" class="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <h2 data-aos="fade-up">Contact</h2>
+      <form id="contact-form" data-aos="fade-up">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Nikhil Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
