@@ -1,0 +1,254 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #222222; /* Dark Background */
+    color: #d1d1d1; /* Light Text Color */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333333; /* Red text color for headers */
+}
+
+/* Navigation */
+nav {
+    background-color: #1F1F1F; /* Dark Gray for Navigation */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #D0D0D0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1F1F1F; /* Bright Red Hover */
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #FF5F5F, #FF8A65), url('autumn.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero .hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#hero .hero-content .tagline {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#hero .hero-content .btn {
+    padding: 10px 30px;
+    background-color: #FF5F5F;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#hero .hero-content .btn:hover {
+    background-color: #FF8A65;
+}
+
+/* About Section */
+#about {
+    background: #333333; /* Dark Background */
+    padding: 80px 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #FFB74D;
+}
+
+.about-text {
+    flex: 2;
+    padding: 20px;
+    background: #444444;
+    color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FF5F5F;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-text .social-links a {
+    color: #FF5F5F;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.about-text .social-links a:hover {
+    color: #FF8A65;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #555555;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: #FF5F5F;
+}
+
+.project-card a {
+    background-color: #FF5F5F;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-card a:hover {
+    background-color: #FF8A65;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background-color: #555555;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    color: #FF5F5F;
+}
+
+
+.progress-bar {
+    background-color: #444444;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background-color: #FF5F5F;
+    width: 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Section Padding */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+body.dark-mode nav {
+    background-color: #181818;
+}
+
+body.dark-mode footer {
+    background-color: #181818;
+}
